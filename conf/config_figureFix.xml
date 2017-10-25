@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GBK"?>
+<comm>
+	<!--程序读取mr数据所在路径 figureFixPosition -->
+	<BcpBkPath>D:\figureFixPosition1</BcpBkPath>
+	<!--读取完mr之后将mr移动到该路径 -->
+	<MrBkPath>D:\mastercom\mroback</MrBkPath>
+	<!--生成的sample放置的文件夹路径 -->
+	<MRSAMPLEPATH>D:\MRSample</MRSAMPLEPATH>
+	<!--前后扩展场强的范围 -->
+	<Range>6</Range>
+	<!--栅格统计结果放置的路径 -->
+	<GridPath>d:\GridStatistic</GridPath>
+	<!--栅格中至少至少匹配到的小区数，小于这个数丢弃该栅格 -->
+	<CellNum>1</CellNum>
+	<!--sample数据移到此路径进行入库 -->
+	<SampleEventPath>d:\mastercom\upload</SampleEventPath>
+	<!--将统计数据放到此路径下进行入库 -->
+	<statisticPath>d:\mastercom\statistic</statisticPath>
+	<!--栅格统计要等sample目录不再修改多少分钟才开始统计 -->
+	<WaitTime_Min>1</WaitTime_Min>
+	<!--没有定位成功的sample数据备份的位置 -->
+	<bckNoFixSamplePath>D:\noFixSample</bckNoFixSamplePath>
+	<!-- 新生成的指纹库10*10和40*40的父级文件夹所在位置 -->
+	<newfigureku>D:\figureku</newfigureku>
+	<!-- 公参数据文件名称，多个文件用逗号隔开 -->
+	<gongcan>tb_cfg_city_cell.txt</gongcan>
+	<!-- 合并指纹库时候保留每个栅格前n强的小区 -->
+	<num>15</num>
+	<!-- 合并栅格经度元整大小 -->
+	<ilongitudRrandomNum>4000</ilongitudRrandomNum>
+	<!-- 合并栅格纬度元整大小 -->
+	<ilatitudeRrandomNum>3600</ilatitudeRrandomNum>
+	<!-- 哪里的数据 -->
+	<type></type>
+	<!-- 偏移cqtnum -->
+	<pianyiNum>1</pianyiNum>
+	<!-- cqt、dt 划分比例分界线 -->
+	<percent>0.8</percent>
+	<!-- 配置指纹库场强最小界限 -->
+	<rsrp_min>-125</rsrp_min>
+	<!-- 线程数量 -->
+	<threadNum>40</threadNum>
+	<!-- 栅格小区前N强 -->
+	<gridCellNum>70</gridCellNum>
+	<!-- 与场强最好的小区差值大小 -->
+	<rsrp_Dvalue>30</rsrp_Dvalue>
+</comm>

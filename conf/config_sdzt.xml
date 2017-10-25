@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GBK"?>
+<comm>
+  <!-- 原始文件路径 -->
+  <SourceFilePath>E:\temp\temp</SourceFilePath>
+  <!-- 解码后的文件路径 -->
+  <BcpFilePath>E:\temp\temp</BcpFilePath>
+  <!-- 备份文件路径,无需备份则填空 -->
+  <BackUpPath>E:\temp\backup</BackUpPath>
+  <!-- 文件修改时间必须大于此数值才会处理该文件 -->
+  <WaitMinute>60</WaitMinute>
+  <!-- 线程数-->
+  <ThreadNum>30</ThreadNum>
+</comm>

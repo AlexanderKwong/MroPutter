@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<comm>
+  <url>jdbc:postgresql://192.168.1.31:5432/HAERBIN</url>
+  <user>dtauser</user>
+  <password>dtauser</password> 
+</comm>

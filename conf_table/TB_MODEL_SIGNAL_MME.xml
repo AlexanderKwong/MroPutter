@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>  
+<table>  
+<fieldname fieldname="xDRID" type="int"/>
+<fieldname fieldname="IMSI" type="int"/>
+<fieldname fieldname="IMEI" type="int"/>
+<fieldname fieldname="MSISDN" type="int"/>
+<fieldname fieldname="ProcedureType" type="int"/>
+<fieldname fieldname="ProcedureStartTime" type="int"/>
+<fieldname fieldname="ProcedureEndTime" type="int"/>
+<fieldname fieldname="ProcedureStatus" type="int"/>
+<fieldname fieldname="RequestCause" type="int"/>
+<fieldname fieldname="FailureCause" type="int"/>
+<fieldname fieldname="MMEUES1APID" type="string"/>
+<fieldname fieldname="MMEGroupID" type="string"/>
+<fieldname fieldname="MMECode" type="string"/>
+<fieldname fieldname="TAC" type="string"/>
+<fieldname fieldname="CellID" type="string"/>
+<fieldname fieldname="APN" type="string"/>
+<splitsign rule="\t" />
+</table>

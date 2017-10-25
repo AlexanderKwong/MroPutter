@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="GBK"?>
+<comm>
+	<!--HDFS根路径，如果没有hadoop，需要填空 -->
+	<HdfsRoot>hdfs://192.168.1.31:9000/</HdfsRoot>
+	<!--HADOOP 主节点管理员账号，如果没有hadoop，需要填空 -->
+	<RootUser>hmaster</RootUser>
+	<!--HADOOP 主节点管理员密码，如果没有hadoop，需要填空 -->
+	<RootPass>mastercom168</RootPass>
+	<!--HDFS主节点IP地址，如果没有hadoop，需要填空 -->
+	<NameNodeIp>192.168.1.31</NameNodeIp>
+
+	<!--指纹定位开关，1代表要进行指纹定处理 -->
+	<DEAL_FIGUREFIX>0</DEAL_FIGUREFIX>
+	<!--上海XDR上传，1代表要进行指纹定处理 -->
+	<DEAL_SHXDR>0</DEAL_SHXDR>
+	<!--宁夏XDR上传，1代表要进行指纹定处理 -->
+	<DEAL_NingXiaXDR>0</DEAL_NingXiaXDR>
+	<!--北京XDR上传，1代表要进行指纹定处理 -->
+	<DEAL_BeiJingXDR>0</DEAL_BeiJingXDR>
+	<!--入库文件下载开关，1代表要自动从HDFS上下载数据，供入库程序入库 -->
+	<DEAL_BCP>0</DEAL_BCP>
+	<!-- 解码山东展厅数据, 1代表解码 -->
+	<DEAL_SDZT>0</DEAL_SDZT>
+
+	<!--数据入库文件下载到本地的目录 -->
+	<SampleEventRoot>D:/mastercom</SampleEventRoot>
+	<!--HDFS 数据主目录，就是我们计算结果的HDFS目录，mroxdrmerge的父目录 -->
+	<HdfsDataPath>/mt_wlyh/Data</HdfsDataPath>
+	<!--是否下载采样点数据 -->
+	<DEAL_BCP_SAMPLE>1</DEAL_BCP_SAMPLE>
+	<!--是否下载统计数据 -->
+	<DEAL_BCP_STAT>1</DEAL_BCP_STAT>
+	<!--是否下载指纹回填采样点数据 -->
+	<DEAL_BCP_FGSAMPLE>0</DEAL_BCP_FGSAMPLE>
+
+	<!--MR解码开关，1代表要MR解码 -->
+	<DEAL_MRDecode>1</DEAL_MRDecode>
+	<!--MR原始文件保存路径，如果不需要进行MR解码，则为空 -->
+	<MrFilePath>E:\temp\648236</MrFilePath>
+	<!--MR原始文件备份路径，如果不需要MR文件备份，则为空，处理后的MR文件立即删除 -->
+	<MrBkPath>D:\test\mroback</MrBkPath>
+	<!--解码后的文件上传HDFS后，是否需要备份一份给其它程序使用，如果不需要则填空，上传后即删除 -->
+	<BcpBkPath>D:\test\BcpBack</BcpBkPath>
+	<!--解码后的文件上传HDFS后，是否需要备份一份给其它程序使用，如果不需要则填空，上传后即删除 -->
+	<BcpBkHours>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</BcpBkHours>
+	<!--MR解码结果保存目录 -->
+	<MrDecodePath>D:\test\mroDocode</MrDecodePath>
+	<!--至少需要多少文件才开始解码 -->
+	<MinFiles>0</MinFiles>
+	<!--解码结果是否压缩 -->
+	<Compress>1</Compress>
+	<!--解码线程数-->
+	<ThreadNum>30</ThreadNum>
+	<!--上传HDFS的ID，区分不同机器上传文件 -->
+	<MoverId>1</MoverId>
+</comm>

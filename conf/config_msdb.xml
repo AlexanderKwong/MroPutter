@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<comm>
+  <serverip>192.168.1.92</serverip>
+  <dbuser>dtauser</dbuser>
+  <dbpassword>dtauser</dbpassword>
+  <database>HAERBIN</database> 
+</comm>

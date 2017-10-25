@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>  
+<table>  
+<fieldname fieldname="xDRID" type="string"/>
+<fieldname fieldname="IMSI" type="string"/>
+<fieldname fieldname="IMEI" type="string"/>
+<fieldname fieldname="MSISDN" type="string"/>
+<fieldname fieldname="TAC" type="string"/>
+<fieldname fieldname="CellID" type="string"/>
+<fieldname fieldname="AppTypeCode" type="string"/>
+<fieldname fieldname="ProcedureStartTime" type="string"/>
+<fieldname fieldname="ProcedureEndTime" type="string"/>
+<fieldname fieldname="AppType" type="string"/>
+<fieldname fieldname="AppSub-type" type="string"/>
+<fieldname fieldname="AppStatus" type="string"/>
+<fieldname fieldname="AppServerIP_IPv4" type="string"/>
+<fieldname fieldname="AppServerPort" type="string"/>
+<fieldname fieldname="ULData" type="string"/>
+<fieldname fieldname="DLData" type="string"/>
+<fieldname fieldname="time" type="string"/>
+<fieldname fieldname="HOST" type="string"/>
+<fieldname fieldname="URI" type="string"/>
+<fieldname fieldname="lot" type="string"/>
+<fieldname fieldname="lat" type="string"/>
+<fieldname fieldname="jingdu" type="string"/>
+<fieldname fieldname="a1" type="string"/>
+<fieldname fieldname="a2" type="string"/>
+<fieldname fieldname="a3" type="string"/>
+<splitsign rule="\t" />
+</table>
