@@ -33,26 +33,14 @@ import java.util.zip.GZIPOutputStream;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.commons.net.ftp.FTPFile;
-import org.apache.hadoop.fs.FSDataInputStream;
-import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.yarn.server.nodemanager.containermanager.application.Application;
-import org.apache.hadoop.yarn.webapp.hamlet.Hamlet.I;
-import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.SAXReader;
-
-import com.sun.xml.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
-
-import cn.mastercom.sssvr.util.CalendarEx;
 import cn.mastercom.sssvr.util.FTPClientHelper;
 import cn.mastercom.sssvr.util.FTPRuleHelper;
 import cn.mastercom.sssvr.util.MyFTPFile;
-import cn.mastercom.sssvr.util.ReturnConfig;
 import cn.mastercom.sssvr.util.SftpClientHelper;
 import cn.mastercom.sssvr.util.SftpFile;
 import cn.mastercom.sssvr.util.SftpRuleHelper;

@@ -19,7 +19,8 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.apache.crimson.tree.XmlDocument;
+//import org.apache.crimson.tree.XmlDocument;
+import org.dom4j.dom.DOMDocument;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -149,8 +150,9 @@ public class XMLConfigFile
             {
                 path.mkdirs();
             }
-            outWriter = new OutputStreamWriter(new FileOutputStream(file));
-            ((XmlDocument)document).write(outWriter, "GB2312");
+            outWriter = new OutputStreamWriter(new FileOutputStream(file), "GB2312");
+//            ((XmlDocument)document).write(outWriter, "GB2312");
+            ((DOMDocument)document).write(outWriter);
         }
         finally
         {
